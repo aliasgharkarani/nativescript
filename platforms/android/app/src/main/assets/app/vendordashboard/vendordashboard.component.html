@@ -1,0 +1,195 @@
+<RadSideDrawer tkExampleTitle tkToggleNavButton>
+    <StackLayout tkDrawerContent class="sideStackLayout">
+        <StackLayout class="">
+            <Label text="Navigation Menu"></Label>
+        </StackLayout>
+        <StackLayout class="sideStackLayout">
+            <Label text="Primary" class="sideLabel sideLightGrayLabel"></Label>
+            <Label text="Social" class="sideLabel"></Label>
+            <Label text="Promotions" class="sideLabel"></Label>
+            <Label text="Labels" class="sideLabel sideLightGrayLabel"></Label>
+            <Label text="Important" class="sideLabel"></Label>
+            <Label text="Starred" class="sideLabel"></Label>
+            <Label text="Sent Mail" class="sideLabel"></Label>
+            <Label text="Drafts" class="sideLabel"></Label>
+        </StackLayout>
+        <Label text="Close Drawer" color="lightgray" padding="10" style="horizontal-align: center" (tap)="onCloseDrawerTap()"></Label>
+    </StackLayout>
+    <StackLayout tkMainContent>
+        <!-- <Label [text]="mainContentText" textWrap="true" class="drawerContentText"></Label> -->
+        <!-- <Button text="OPEN DRAWER" (tap)="openDrawer()" class="drawerContentButton"></Button> -->
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        <ActionBar title="COOPER SWITCH" style="background-color: black;color:rgb(0, 255, 34);font-weight:bold;text-align:center;">
+          <NavigationButton android.position="actionBar" (tap)="openDrawer()" class="drawerContentButton" android.systemIcon="ic_menu_back"
+          tap="toggleDrawer"></NavigationButton>
+          <ActionItem ios.systemIcon="2" android.systemIcon="ic_menu_edit" ios.position="right"></ActionItem>
+          <ActionItem ios.systemIcon="2" android.systemIcon="ic_menu_edit" ios.position="right"></ActionItem>
+        </ActionBar>
+        <StackLayout xmlns:sd="nativescript-ui-sidedrawer">
+          <radSideDrawer tkExampleTitle tkToggleNavButton>
+            <StackLayout tkDrawerContent class="sideStackLayout">
+              <StackLayout class="sideTitleStackLayout">
+                <Label text="Navigation Menu"></Label>
+              </StackLayout>
+              <StackLayout class="sideStackLayout">
+                <Label text="Primary" class="sideLabel sideLightGrayLabel"></Label>
+                <Label text="Social" class="sideLabel"></Label>
+                <Label text="Promotions" class="sideLabel"></Label>
+                <Label text="Labels" class="sideLabel sideLightGrayLabel"></Label>
+                <Label text="Important" class="sideLabel"></Label>
+                <Label text="Starred" class="sideLabel"></Label>
+                <Label text="Sent Mail" class="sideLabel"></Label>
+                <Label text="Drafts" class="sideLabel"></Label>
+              </StackLayout>
+              <Label text="Close Drawer" color="lightgray" padding="10" style="horizontal-align: center" (tap)="onCloseDrawerTap()"></Label>
+    </StackLayout>
+    <StackLayout tkMainContent>
+      <Label [text]="mainContentText" textWrap="true" class="drawerContentText"></Label>
+      <Button text="OPEN DRAWER" (tap)="openDrawer()" class="drawerContentButton"></Button>
+    </StackLayout>
+  </radSideDrawer>
+</StackLayout>
+<StackLayout>
+  <StackLayout orientation="horizontal" style="height:18%;">
+    <StackLayout style="width:5%"></StackLayout>
+    <StackLayout style="background: url('~/images/BG-3.png');height:100%;width:45%;background-repeat: no-repeat;background-size: 100% 100%;">
+      <StackLayout orientation="horizontal" style="margin-top:40%;">
+        <label style="width:10%"></label>
+        <label text="Recent Orders" style="width:55%;color: white;font-weight: bold"></label>
+        <label style="width:10%"></label>
+        <label text="10" style="width:20%;color: white;font-weight: bold"></label>
+      </StackLayout>
+      <StackLayout class="hr-light m-10" style="width:80%"></StackLayout>
+      <StackLayout orientation="horizontal">
+        <label style="width:10%"></label>
+        <label text="Ready to be Shipped" style="width:70%;color: white;" class="h6"></label>
+        <label style="width:20%"></label>
+      </StackLayout>
+    </StackLayout>
+    <StackLayout style="background: url('~/images/BG-1.png');height:100%;width:45%;background-repeat: no-repeat;background-position: center center;background-size: 100% 100%;">
+      <StackLayout orientation="horizontal" style="margin-top:40%;">
+        <label style="width:10%"></label>
+        <label text="Recent Orders" style="width:55%;color: white;font-weight: bold"></label>
+        <label style="width:10%"></label>
+        <label text="10" style="width:20%;color: white;font-weight: bold"></label>
+      </StackLayout>
+      <StackLayout class="hr-light m-10" style="width:80%"></StackLayout>
+      <StackLayout orientation="horizontal">
+        <label style="width:10%"></label>
+        <label text="Ready to be Shipped" style="width:70%;color: white;" class="h6"></label>
+        <label style="width:20%"></label>
+      </StackLayout>
+    </StackLayout>
+    <StackLayout style="width:5%"></StackLayout>
+  </StackLayout>
+  <StackLayout orientation="horizontal" style="height:18%;">
+    <StackLayout style="width:5%"></StackLayout>
+    <StackLayout style="background: url('~/images/BG-2.png');height:100%;width:45%;background-repeat: no-repeat;background-position: center center;background-size: 100% 100%;">
+      <StackLayout orientation="horizontal" style="margin-top:40%;">
+        <label style="width:10%"></label>
+        <label text="Recent Orders" style="width:55%;color: white;font-weight: bold"></label>
+        <label style="width:10%"></label>
+        <label text="10" style="width:20%;color: white;font-weight: bold"></label>
+      </StackLayout>
+      <StackLayout class="hr-light m-10" style="width:80%"></StackLayout>
+      <StackLayout orientation="horizontal">
+        <label style="width:10%"></label>
+        <label text="Ready to be Shipped" style="width:70%;color: white;" class="h6"></label>
+        <label style="width:20%"></label>
+      </StackLayout>
+    </StackLayout>
+    <StackLayout style="background: url('~/images/BG-3.png');height:100%;width:45%;background-repeat: no-repeat;background-position: center center;background-size: 100% 100%;">
+      <StackLayout orientation="horizontal" style="margin-top:40%;">
+        <label style="width:10%"></label>
+        <label text="Recent Orders" style="width:55%;color: white;font-weight: bold"></label>
+        <label style="width:10%"></label>
+        <label text="10" style="width:20%;color: white;font-weight: bold"></label>
+      </StackLayout>
+      <StackLayout class="hr-light m-10" style="width:80%"></StackLayout>
+      <StackLayout orientation="horizontal">
+        <label style="width:10%"></label>
+        <label text="Ready to be Shipped" style="width:70%;color: white;" class="h6"></label>
+        <label style="width:20%"></label>
+      </StackLayout>
+    </StackLayout>
+    <StackLayout style="width:5%"></StackLayout>
+  </StackLayout>
+  
+  <StackLayout>
+    <label text="Recent Transactions" style="width:85%;font-weight:bold;color:black"></label>
+  </StackLayout>
+  
+  <ScrollView style="height:41%;margin-top: 3%" orientation="vertical" sdkExampleTitle sdkToggleNavButton>
+    <StackLayout>
+      <ng-container *ngFor="let item of data; index as i;">
+        <Stacklayout style="width:85%; height:100%">
+          <StackLayout orientation="horizontal" style="height:100%;" (tap)="expand(i)">
+            <StackLayout style="width:20%" VerticalAlignment="center">
+              <img [src]="'~/images/'+item.coverUrl" height="90px" width="100%" style="margin-top:18%;" />
+            </StackLayout>
+            <StackLayout style="width:50%;vertical-align: center">
+              <label [text]="item.name"></label>
+              <label [text]="item.date" style="margin-top:2%;color:rgb(141, 139, 139)"></label>
+            </StackLayout>
+            <StackLayout style="width:30%;vertical-align: center;text-align:right">
+              <label [text]="item.price"></label>
+              <label [text]="'Order ID: '+item.orderId" style="margin-top:2%;color:rgb(141, 139, 139)"></label>
+            </StackLayout>
+          </StackLayout>
+          <StackLayout class="scale-in-ver-top" *ngIf="i === expandedItemIndex" [ngStyle]="{'height':i === expandedItemIndex?'100%':'10%'}">
+            <StackLayout style="height:100%" orientation="horizontal">
+              <StackLayout style="width:10%"></StackLayout>
+              <StackLayout style="width:40%;margin-top:15%">
+                <label text="Vendor Payment"></label>
+                <StackLayout orientation="horizontal">
+                  <label text="14 Feb,2018"></label>
+                  <label text="ID:2215230"></label>
+                </StackLayout>
+              </StackLayout>
+              <StackLayout style="width:10%"></StackLayout>
+              <StackLayout style="width:40%;margin-top:15%">
+                <StackLayout style="height:100%;width:100%">
+                  <img src="~/images/reject.png" height="20px" width="100%" />
+                  <img src="~/images/approve.png" height="20px" width="100%" style="margin-top:10%" />
+                </StackLayout>
+              </StackLayout>
+            </StackLayout>
+          </StackLayout>
+        </Stacklayout>
+      </ng-container>
+    </StackLayout>
+  </ScrollView>
+  <StackLayout style="background-color:red;" orientation="horizontal" horizontalAlignment="center" style="align-self: center;margin-top:-30">
+    <img src="~/images/scrollview.png" height="30%" />
+  </StackLayout>
+  
+  <StackLayout orientation="horizontal" style="background-color: orange;bottom:0;height:10%;margin-top:5%;padding:10">
+    <StackLayout width="25%" height="100%">
+      <img src="~/images/folder.png" style="background-color: red" style="height:30;width:35" />
+      <label style="text-align:center;color: white" text="Shop"></label>
+    </StackLayout>
+    <StackLayout width="25%" height="100%">
+      <img src="~/images/Home_Dashboard.png" style="background-color: red" style="height:30;width:35" />
+      <label style="text-align:center;color: white" text="Track Order"></label>
+    </StackLayout>
+    <StackLayout width="25%" height="100%">
+      <img src="~/images/settings (1).png" style="background-color: red" style="height:30;width:35" />
+      <label style="text-align:center;color: white" text="Acept/Deny"></label>
+    </StackLayout>
+    <StackLayout width="25%" height="100%">
+      <img src="~/images/tabs.png" style="background-color: red" style="height:30;width:35" />
+      <label style="text-align:center;color: white" text="My Account"></label>
+    </StackLayout>
+  </StackLayout>
+</StackLayout>
+</StackLayout>
+</RadSideDrawer>

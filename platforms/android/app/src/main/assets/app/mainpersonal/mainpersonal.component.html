@@ -1,0 +1,135 @@
+<!-- <ActionBar title="COOPER SWITCH" style="background-color: black;color:orange;font-weight:bold;text-align:center;">
+  <NavigationButton android.position="actionBar" android.systemIcon="ic_menu_back"></NavigationButton>
+  <ActionItem ios.systemIcon="2" android.systemIcon="ic_menu_edit" ios.position="right"></ActionItem>
+  <ActionItem ios.systemIcon="2" android.systemIcon="ic_menu_edit" ios.position="right"></ActionItem>
+</ActionBar> -->
+
+<!-- <StackLayout style="background-color: lightsteelblue" xmlns:ns="nativescript-carousel"> -->
+<!-- <ns:Carousel height="100%" width="100%" pageChanged="myChangeEvent" pageTapped="mySelectedEvent" indicatorColor="#fff000" finite="true" bounce="false" showIndicator="true" verticalAlignment="top" android:indicatorAnimation="swap" color="white">                
+        <ns:CarouselItem id="slide1" backgroundColor="#b3cde0" verticalAlignment="middle">
+            <Label text="Slide 1" backgroundColor="#50000000" horizontalAlignment="center"/>
+        </ns:CarouselItem>
+        <ns:CarouselItem id="slide2" backgroundColor="#6497b1" verticalAlignment="middle">
+            <Label text="Slide 2" backgroundColor="#50000000" horizontalAlignment="center"/>
+        </ns:CarouselItem>
+        <ns:CarouselItem id="slide3" backgroundColor="#005b96" verticalAlignment="middle">
+            <Label text="Slide 3" backgroundColor="#50000000" horizontalAlignment="center"/>
+        </ns:CarouselItem>
+        <ns:CarouselItem id="slide4" backgroundColor="#03396c" verticalAlignment="middle">
+            <Label text="Slide 4" backgroundColor="#50000000" horizontalAlignment="center"/>
+        </ns:CarouselItem>
+    </ns:Carousel>
+     <ns:Carousel id="myCarousel" items="{{ myDataArray }}" height="100%" width="100%" color="white" pageChanged="myChangeEvent" pageTapped="mySelectedEvent" android:indicatorAnimation="slide"  indicatorColor="#fff" indicatorOffset="0,0" showIndicator="true">
+        <ns:Carousel.itemTemplate>
+            <ns:CarouselItem backgroundColor="{{ color }}" verticalAlignment="middle">
+                <GridLayout>
+                    <Image src="{{ image }}" stretch="aspectFill" />
+                    <Label text="{{ title }}" horizontalAlignment="center" backgroundColor="#50000000" height="30" />
+                </GridLayout>
+            </ns:CarouselItem>
+        </ns:Carousel.itemTemplate>
+    </ns:Carousel> -->
+<!-- </StackLayout> -->
+<StackLayout>
+  <StackLayout style="width:100%;height:7%;background-color: black" orientation="horizontal">
+
+    <StackLayout style="width:2%;height:100%"></StackLayout>
+    <StackLayout style="width:18%;height:100%">
+      <img src="~/images/menu.png" style="height:20;width:30;margin-top:30%" />
+    </StackLayout>
+    <StackLayout style="width:5%;height:100%"></StackLayout>
+    <StackLayout style="width:50%;height:100%">
+      <img src="~/images/logo2.png" style="height:100%;width:80%;" />
+    </StackLayout>
+    <StackLayout style="width:15%;height:100%;">
+      <img src="~/images/Notifications.png" style="height:70%;width:70%;margin-top:20%" />
+    </StackLayout>
+    <StackLayout style="width:15%;height:100%;">
+      <img src="~/images/search.png" style="height:70%;width:70%;margin-top:20%" />
+    </StackLayout>
+  </StackLayout>
+
+  <ScrollView style="height:84.5%" orientation="vertical" sdkExampleTitle sdkToggleNavButton>
+    <StackLayout>
+      <FlexLayout style="height:25%">
+        <img src="~/images/Layer2.png" />
+      </FlexLayout>
+
+      <StackLayout shadow="2" style="width:90%;height:18%;margin-top:2%" orientation="horizontal">
+        <StackLayout shadow="3" style="width:33%;margin-right:2%;height:100%">
+          <StackLayout style="height: 100%;width: 100%;">
+            <img src="~/images/Layer1450.png" style="height:60%;width:80%" />
+            <StackLayout orientation="horizontal">
+              <label text=" From: " class="h5" style="color:black;font-weight:bold"></label>
+              <label text="N 50,000.00" style="color:black;font-size:10"></label>
+            </StackLayout>
+            <label text="Round-frame metal glasses" class="h6" style="color:black;font-weight:bold;font-size:10"></label>
+
+          </StackLayout>
+        </StackLayout>
+        <StackLayout shadow="2" style="width:33%;;margin-right:2%;height:100%">
+          <img src="~/images/Layer1449.png" style="height:60%;width:80%" />
+          <StackLayout orientation="horizontal">
+            <label text=" From: " class="h5" style="color:black;font-weight:bold"></label>
+            <label text="N 50,000.00" style="color:black;font-size:10"></label>
+          </StackLayout>
+          <label text="Round-frame metal glasses" class="h6" style="color:black;font-weight:bold;font-size:10"></label>
+        </StackLayout>
+        <StackLayout shadow="2" style="width:33%;margin-right:2%;height:100%">
+          <img src="~/images/Layer1452.png" style="height:60%;width:80%" />
+          <StackLayout orientation="horizontal">
+            <label text=" From: " class="h5" style="color:black;font-weight:bold"></label>
+            <label text="N 50,000.00" style="color:black;font-size:10"></label>
+          </StackLayout>
+          <label text="Round-frame metal glasses" class="h6" style="color:black;font-weight:bold;font-size:10"></label>
+        </StackLayout>
+      </StackLayout>
+
+      <StackLayout style="width:90%;height:5%;margin-top:1%" orientation="horizontal">
+        <label text="Collections" style="width:30%;color: black;font-weight:bold;font-size:14;margin-top:2%"></label>
+        <label style="width:50%"></label>
+        <label text="SEE ALL" style="width: 20%;color:orange;;margin-top:2%"></label>
+      </StackLayout>
+
+      <FlexLayout style="height:15%;background-color: blueviolet; padding: 0;">
+        <img src="~/images/Layer9.png" width="90%" />
+      </FlexLayout>
+
+      <StackLayout orientation="horizontal" style="height:25%;width:90%;margin-top:1%">
+        <StackLayout style="width:50%">
+
+          <FlexLayout>
+            <img src="~/images/Layer15.png"/>
+          </FlexLayout>
+          <FlexLayout>
+            <img src="~/images/Layer16.png" />
+          </FlexLayout>
+        </StackLayout>
+        <StackLayout style="width:60%">
+          <img src="~/images/Layer14.png" />
+        </StackLayout>
+      </StackLayout>
+
+      </StackLayout>
+      </ScrollView>
+      <!-- <StackLayout style="height:12%;background-color: crimson;position: absolute">
+  </StackLayout> -->
+      <StackLayout orientation="horizontal" style="background-color: orange;bottom:0;height:9%;margin:0% 0%;padding:10;position: absolute">
+        <StackLayout width="25%" height="100%">
+          <img src="~/images/folder.png" style="background-color: red" style="height:20;width:35" />
+          <label style="text-align:center;color: white;font-size:10" text="Shop"></label>
+        </StackLayout>
+        <StackLayout width="25%" height="100%">
+          <img src="~/images/Home_Dashboard.png" style="background-color: red" style="height:20;width:35" />
+          <label style="text-align:center;color: white;font-size:10" text="Track Order"></label>
+        </StackLayout>
+        <StackLayout width="25%" height="100%">
+          <img src="~/images/settings (1).png" style="background-color: red" style="height:20;width:35" />
+          <label style="text-align:center;color: white;font-size:10" text="Acept/Deny"></label>
+        </StackLayout>
+        <StackLayout width="25%" height="100%">
+          <img src="~/images/tabs.png" style="background-color: red" style="height:20;width:35" />
+          <label style="text-align:center;color: white;font-size:10" text="My Account"></label>
+        </StackLayout>
+      </StackLayout>
+    </StackLayout>
