@@ -7,6 +7,7 @@ E:\firstapp\platforms\android\app\src\main\assets\app\item\item-detail.component
 E:\firstapp\platforms\android\app\src\main\assets\app\item\item.js
 E:\firstapp\platforms\android\app\src\main\assets\app\item\item.service.js
 E:\firstapp\platforms\android\app\src\main\assets\app\item\items.component.js
+E:\firstapp\platforms\android\app\src\main\assets\app\landpage\landpage.component.js
 E:\firstapp\platforms\android\app\src\main\assets\app\locationpage\locationpage.component.js
 E:\firstapp\platforms\android\app\src\main\assets\app\login\login.component.js
 E:\firstapp\platforms\android\app\src\main\assets\app\login1\login1.component.js
@@ -16,6 +17,8 @@ E:\firstapp\platforms\android\app\src\main\assets\app\mainpersonal\mainpersonal.
 E:\firstapp\platforms\android\app\src\main\assets\app\modal-params.service.js
 E:\firstapp\platforms\android\app\src\main\assets\app\modalpage\modalpage.component.js
 E:\firstapp\platforms\android\app\src\main\assets\app\myshop\myshop.component.js
+E:\firstapp\platforms\android\app\src\main\assets\app\otp\otp.component.js
+E:\firstapp\platforms\android\app\src\main\assets\app\password\password.component.js
 E:\firstapp\platforms\android\app\src\main\assets\app\phoneverify\phoneverify.component.js
 E:\firstapp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-angular\animations\animation-driver.js
 E:\firstapp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-angular\animations\animation-player.js
@@ -107,6 +110,7 @@ E:\firstapp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-n
 E:\firstapp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-ng-shadow\common\shape.enum.js
 E:\firstapp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-ng-shadow\hooks\before-livesync\nativescript-angular-sync.js
 E:\firstapp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-ng-shadow\ng-shadow.js
+E:\firstapp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-ng2-carousel\nativescript-ng2-carousel.js
 E:\firstapp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-ui-sidedrawer\hooks\before-livesync\nativescript-angular-sync.js
 E:\firstapp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-ui-sidedrawer\ui-sidedrawer.common.js
 E:\firstapp\platforms\android\app\src\main\assets\app\tns_modules\nativescript-ui-sidedrawer\ui-sidedrawer.js
@@ -263,4 +267,7 @@ E:\firstapp\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modul
 E:\firstapp\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\utils\utils.js
 E:\firstapp\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\xhr\xhr.js
 E:\firstapp\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\xml\xml.js
+E:\firstapp\platforms\android\app\src\main\assets\app\vendor\vendor.component.js
 E:\firstapp\platforms\android\app\src\main\assets\app\vendordashboard\vendordashboard.component.js
+E:\firstapp\platforms\android\app\src\main\assets\app\verifynumber\verifynumber.component.js
+E:\firstapp\platforms\android\app\src\main\assets\app\webviewform\webviewform.component.js

@@ -16,6 +16,7 @@ import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 // import { LoginComponent } from "~/login/login.component";
 import {AddproductComponent } from "./addproduct/addproduct.component"
+import {PasswordComponent } from "./password/password.component"
 import { LocationpageComponent } from "~/locationpage/locationpage.component"
 import { DropDownModule } from "nativescript-drop-down/angular";
 import { Addproduct2Component } from "~/addproduct2/addproduct2.component";
@@ -29,7 +30,8 @@ import { MyshopComponent } from "~/myshop/myshop.component"
 import { VendordashboardComponent } from "~/vendordashboard/vendordashboard.component"
 import { NgShadowModule } from 'nativescript-ng-shadow';
 import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
-
+import {WebviewformComponent } from "./webviewform/webviewform.component"
+import {CarouselDirective} from "nativescript-ng2-carousel/nativescript-ng2-carousel";
 declare var GMSServices: any;
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
@@ -61,7 +63,8 @@ declare var GMSServices: any;
         AppComponent,
         ItemsComponent,
         ItemDetailComponent,
-        VendordashboardComponent
+        WebviewformComponent,
+        CarouselDirective,
     ],
     providers: [
         ItemService,

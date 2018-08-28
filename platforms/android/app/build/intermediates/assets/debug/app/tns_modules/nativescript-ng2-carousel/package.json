@@ -1,0 +1,82 @@
+{
+  "_from": "nativescript-ng2-carousel",
+  "_id": "nativescript-ng2-carousel@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-PMKeoaBT2lyBD2aPTTDDOFWFZMMIfbbjPer9d/wKdSZ9EbrDCXK5NVQYOnSYhT05PnC4m39/TGRfEd/i13FWjw==",
+  "_location": "/nativescript-ng2-carousel",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nativescript-ng2-carousel",
+    "name": "nativescript-ng2-carousel",
+    "escapedName": "nativescript-ng2-carousel",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-ng2-carousel/-/nativescript-ng2-carousel-0.1.0.tgz",
+  "_shasum": "cadd2aafcbc14f0e90a6195443aaadc577721dfd",
+  "_spec": "nativescript-ng2-carousel",
+  "_where": "E:\\firstapp",
+  "author": {
+    "name": "Manel Alcoceba",
+    "email": "manelalcoceba@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/alcoceba/ngCarouselDirective/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@angular/core": "^6.0.0",
+    "rxjs": "^6.0.0",
+    "tns-core-modules": "^4.0.0",
+    "zone.js": "^0.8.0"
+  },
+  "deprecated": false,
+  "description": "A simple NativeScript + Angular images carousel for iOS and Android",
+  "homepage": "https://github.com/alcoceba/ngCarouselDirective#readme",
+  "keywords": [
+    "angular",
+    "nativescript",
+    "carousel",
+    "images",
+    "slides",
+    "slide",
+    "slider",
+    "gallery",
+    "ng",
+    "typescript",
+    "angular4",
+    "angular5",
+    "angular6"
+  ],
+  "license": "MIT",
+  "main": "nativescript-ng2-carousel",
+  "name": "nativescript-ng2-carousel",
+  "nativescript": {
+    "platforms": {
+      "android": "3.1.0",
+      "ios": "3.1.0"
+    },
+    "plugin": {
+      "nan": "true",
+      "pan": "false",
+      "core3": "true",
+      "category": "Interface"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alcoceba/ngCarouselDirective.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "typings": "nativescript-ng2-carousel.ts",
+  "version": "0.1.0"
+}

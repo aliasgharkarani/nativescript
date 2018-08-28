@@ -89,21 +89,21 @@
 
       <!-- <StackLayout style="width:100%"> -->
           <StackLayout class="input-field" style="width:100%">
-          <label text="Copper Id" style="font-size:12"></label>
+          <label text="COOPER ID" style="font-size:12"></label>
           <StackLayout style="height:9%;border-width:2 2 2 2;border-color: rgb(173, 173, 160);border-radius:5;margin-top:3%">
-            <TextField hint="Enter Copper Id" class="input" style="color:rgb(10, 10, 10);padding-top:8%;font-size:9"></TextField>
+            <TextField hint="Enter cooper id " class="input" style="color:rgb(10, 10, 10);padding-top:8%;padding-left:5%;font-size:10"></TextField>
           </StackLayout>
         </StackLayout>
 
         <StackLayout class="input-field" style="width:100%;">
-            <label text="Copper Id" style="font-size:12"></label>
+            <label text="PRICE (N)" style="font-size:12"></label>
             <StackLayout style="height:11%;border-width:2 2 2 2;border-color: rgb(173, 173, 160);border-radius:5;margin-top:3%">
-              <TextField hint="Enter Copper Id" class="input" style="color:rgb(10, 10, 10);padding-top:8%;font-size:9"></TextField>
+              <TextField hint="Add the price of item" class="input" style="color:rgb(10, 10, 10);padding-top:8%;padding-left:5%;font-size:10"></TextField>
             </StackLayout>
           </StackLayout>
 
         <StackLayout class="input-field" style="width:100%;">
-          <label text="Select Cooperative" style="font-size:12"></label>
+          <label text="SELECT COOPERATIVE" style="font-size:12"></label>
           <StackLayout class="input-field tfstyle" style="height:15%;width:100%;border-width:2 2 2 2;border-color: rgb(173, 173, 160);border-radius:5;font-size:9;margin-bottom:0">
             <DropDown #dd backroundColor="red" [items]="items" [(ngModel)]="selectedIndex" (selectedIndexChanged)="onchange($event)"
               (opened)="onopen()" (closed)="onclose()" row="0" colSpan="2"></DropDown>
@@ -111,7 +111,7 @@
         </StackLayout>
 
         <StackLayout class="input-field" style="width:100%">
-            <label text="Select Cooperative" style="font-size:12"></label>
+            <label text="ACCOUNT TYPE" style="font-size:12"></label>
             <StackLayout class="input-field tfstyle" style="height:25%;width:100%;border-width:2 2 2 2;border-color: rgb(173, 173, 160);border-radius:5;font-size:9;margin-bottom:0">
               <DropDown #dd backroundColor="red" [items]="items" [(ngModel)]="selectedIndex" (selectedIndexChanged)="onchange($event)"
                 (opened)="onopen()" (closed)="onclose()" row="0" colSpan="2"></DropDown>

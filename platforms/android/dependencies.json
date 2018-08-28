@@ -16,6 +16,10 @@
         "directory": "..\\..\\node_modules\\nativescript-ng-shadow"
     },
     {
+        "name": "nativescript-ng2-carousel",
+        "directory": "..\\..\\node_modules\\nativescript-ng2-carousel"
+    },
+    {
         "name": "nativescript-theme-core",
         "directory": "..\\..\\node_modules\\nativescript-theme-core"
     },

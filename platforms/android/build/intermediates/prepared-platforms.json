@@ -12,6 +12,7 @@
     "nativescript-carousel": true,
     "nativescript-drop-down": true,
     "nativescript-ng-shadow": true,
+    "nativescript-ng2-carousel": true,
     "nativescript-theme-core": true,
     "nativescript-ui-sidedrawer": true,
     "reflect-metadata": true,

@@ -31,7 +31,7 @@ import { VendordashboardComponent } from "~/vendordashboard/vendordashboard.comp
 import { NgShadowModule } from 'nativescript-ng-shadow';
 import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
 import {WebviewformComponent } from "./webviewform/webviewform.component"
-
+import {CarouselDirective} from "nativescript-ng2-carousel/nativescript-ng2-carousel";
 declare var GMSServices: any;
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
@@ -60,10 +60,11 @@ declare var GMSServices: any;
 
     ],
     declarations: [
+        CarouselDirective,
         AppComponent,
         ItemsComponent,
         ItemDetailComponent,
-        WebviewformComponent
+        WebviewformComponent,
     ],
     providers: [
         ItemService,
