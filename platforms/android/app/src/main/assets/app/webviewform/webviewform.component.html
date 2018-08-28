@@ -4,7 +4,15 @@
   <ActionItem ios.systemIcon="2" android.systemIcon="ic_menu_edit" ios.position="right"></ActionItem>
 </ActionBar> -->
 
-<StackLayout style="background-color:rgb(250, 249, 249)">
+
+
+<ActionBar title="COOPER SWITCH" style="background-color: black;color:orange;font-weight:bold;text-align:center;">
+  <NavigationButton android.position="actionBar" android.systemIcon="ic_menu_back"></NavigationButton>
+  <ActionItem ios.systemIcon="2" android.systemIcon="ic_menu_edit" ios.position="right"></ActionItem>
+  <ActionItem ios.systemIcon="2" android.systemIcon="ic_menu_edit" ios.position="right"></ActionItem>
+</ActionBar>
+
+<StackLayout style="background-color:#F6F6F6">
 
   <StackLayout style="width:100%;height:7%;background-color: black" orientation="horizontal">
 
@@ -24,9 +32,147 @@
     </StackLayout>
   </StackLayout>
 
+  <StackLayout style="align-self: flex-start">
+    <StackLayout style="height:60;background-color: black">
+      <GridLayout class="list-group-item" columns="80, *" style="padding:10">
+        <img row="0" col="0" src="~/images/add.png" style="height:30;width:30;" rowSpan="2" />
+        <StackLayout style="align-self:center" row="0" col="1">
+          <label row="0" col="1" class="h3" text="Make Sale"></label>
+          <label row="1" col="1" class="h5" text="Fil the form below and add your store location" style="height:25;"></label>
+        </StackLayout>
+      </GridLayout>
+    </StackLayout>
+  </StackLayout>
+
+  <StackLayout shadow="2"  style="height:58%;width:80%;background-color:#ffffff;margin-top:5%;">
+
+    <StackLayout class="form" style="height:100%;width:90%;margin-top:2%" xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded"
+      xmlns:dd="nativescript-drop-down">
+
+      <!-- <StackLayout class="input-field" style="height:9%">
+        <TextField hint="Address Line 1" class="input"></TextField>
+        <StackLayout class="tfstyle"></StackLayout>
+      </StackLayout>
+
+      <StackLayout class="input-field" style="height:9%">
+        <TextField hint="Address Line 1" class="input"></TextField>
+        <StackLayout class="tfstyle"></StackLayout>
+      </StackLayout>
+
+
+      <StackLayout class="input-field" >
+        <TextField hint="City" class="input"></TextField>
+        <StackLayout class="tfstyle"></StackLayout>
+      </StackLayout>
+
+      <StackLayout class="input-field" style="height:10%">
+        <DropDown #dd backroundColor="red" [items]="items" [(ngModel)]="selectedIndex" (selectedIndexChanged)="onchange($event)"
+          (opened)="onopen()" (closed)="onclose()" row="0" colSpan="2"></DropDown>
+          <StackLayout class="tfstyle"></StackLayout>      
+        </StackLayout>
+
+      <StackLayout class="input-field" style="height:10%">
+        <DropDown #dd backroundColor="red" [items]="items" [(ngModel)]="selectedIndex" (selectedIndexChanged)="onchange($event)"
+          (opened)="onopen()" (closed)="onclose()" row="0" colSpan="2"></DropDown>
+          <StackLayout class="tfstyle"></StackLayout>      
+        </StackLayout>
+
+      <StackLayout class="input-field" style="height:9%">
+        <TextField hint="Zip Code" class="input"></TextField>
+        <StackLayout class="tfstyle"></StackLayout>
+      </StackLayout>
+
+       <StackLayout >
+          <img src="~/images/RoundedRectangle1449.png"/>
+      </StackLayout> -->
+
+
+      <!-- <StackLayout style="width:100%"> -->
+          <StackLayout class="input-field" style="width:100%">
+          <label text="Copper Id" style="font-size:12"></label>
+          <StackLayout style="height:9%;border-width:2 2 2 2;border-color: rgb(173, 173, 160);border-radius:5;margin-top:3%">
+            <TextField hint="Enter Copper Id" class="input" style="color:rgb(10, 10, 10);padding-top:8%;font-size:9"></TextField>
+          </StackLayout>
+        </StackLayout>
+
+        <StackLayout class="input-field" style="width:100%;">
+            <label text="Copper Id" style="font-size:12"></label>
+            <StackLayout style="height:11%;border-width:2 2 2 2;border-color: rgb(173, 173, 160);border-radius:5;margin-top:3%">
+              <TextField hint="Enter Copper Id" class="input" style="color:rgb(10, 10, 10);padding-top:8%;font-size:9"></TextField>
+            </StackLayout>
+          </StackLayout>
+
+        <StackLayout class="input-field" style="width:100%;">
+          <label text="Select Cooperative" style="font-size:12"></label>
+          <StackLayout class="input-field tfstyle" style="height:15%;width:100%;border-width:2 2 2 2;border-color: rgb(173, 173, 160);border-radius:5;font-size:9;margin-bottom:0">
+            <DropDown #dd backroundColor="red" [items]="items" [(ngModel)]="selectedIndex" (selectedIndexChanged)="onchange($event)"
+              (opened)="onopen()" (closed)="onclose()" row="0" colSpan="2"></DropDown>
+          </StackLayout>
+        </StackLayout>
+
+        <StackLayout class="input-field" style="width:100%">
+            <label text="Select Cooperative" style="font-size:12"></label>
+            <StackLayout class="input-field tfstyle" style="height:25%;width:100%;border-width:2 2 2 2;border-color: rgb(173, 173, 160);border-radius:5;font-size:9;margin-bottom:0">
+              <DropDown #dd backroundColor="red" [items]="items" [(ngModel)]="selectedIndex" (selectedIndexChanged)="onchange($event)"
+                (opened)="onopen()" (closed)="onclose()" row="0" colSpan="2"></DropDown>
+            </StackLayout>
+          </StackLayout>
+
+      <StackLayout orientation="horizontal">
+        <StackLayout style="width:60%">
+        </StackLayout>
+        <StackLayout style="width:40%">
+          <img src="~/images/addbtn.png" style="height:70%;width:90%" />
+        </StackLayout>
+      </StackLayout>
+
+  </StackLayout>
+</StackLayout>
+<img src="~/images/Ellipse957.png" height="15%" width="10%" style="align-self: center;margin-top:-50;z-index:50;" />
+
+<StackLayout orientation="horizontal" style="background-color: orange;bottom:0;height:10%;margin:0% 0%;padding:10;margin-top:3.5%">
+  <StackLayout width="25%" height="100%">
+    <img src="~/images/folder.png" style="background-color: red" style="height:30;width:35" />
+    <label style="text-align:center;color: white;font-size: 10" text="Shop"></label>
+  </StackLayout>
+  <StackLayout width="25%" height="100%">
+    <img src="~/images/Home_Dashboard.png" style="background-color: red" style="height:30;width:35" />
+    <label style="text-align:center;color: white;font-size: 10" text="Track Order"></label>
+  </StackLayout>
+  <StackLayout width="25%" height="100%">
+    <img src="~/images/settings (1).png" style="background-color: red" style="height:30;width:35" />
+    <label style="text-align:center;color: white;font-size: 10" text="Accept/Deny"></label>
+  </StackLayout>
+  <StackLayout width="25%" height="100%">
+    <img src="~/images/tabs.png" style="background-color: red" style="height:30;width:35" />
+    <label style="text-align:center;color: white;font-size: 10" text="My Account"></label>
+  </StackLayout>
+</StackLayout>
+</StackLayout>
+
+
+
+<!-- <StackLayout style="background-color:rgb(250, 249, 249)">
+
+  <StackLayout style="width:100%;height:7%;background-color: black" orientation="horizontal">
+    <StackLayout style="width:2%;height:100%"></StackLayout>
+    <StackLayout style="width:18%;height:100%">
+      <img src="~/images/Backarrow (2).png" style="height:30;width:30;margin-top:20%" />
+    </StackLayout>
+    <StackLayout style="width:5%;height:100%"></StackLayout>
+    <StackLayout style="width:50%;height:100%">
+      <img src="~/images/logo.png" style="height:100%;width:80%;" />
+    </StackLayout>
+    <StackLayout style="width:15%;height:100%;">
+      <img src="~/images/Notifications.png" style="height:70%;width:70%;margin-top:20%" />
+    </StackLayout>
+    <StackLayout style="width:15%;height:100%;">
+      <img src="~/images/search.png" style="height:70%;width:70%;margin-top:20%" />
+    </StackLayout>
+  </StackLayout>
+
   <StackLayout>
     <label text="Make Sale" style="font-size:25;padding-left:2%;color:black"></label>
-    <!-- <StackLayout  style="height:50%;width:95%;background-color:#ffffff;"> -->
     <StackLayout shadow="2" class="form" style="height:55%;width:97%;margin-top:5%;" xmlns="http://schemas.nativescript.org/tns.xsd"
       loaded="pageLoaded" xmlns:dd="nativescript-drop-down">
 
@@ -72,6 +218,4 @@
       </StackLayout>
 
     </StackLayout>
-    <!-- </StackLayout> -->
-  </StackLayout>
-  <!-- </StackLayout> -->
+  </StackLayout> -->

@@ -1,5 +1,26 @@
-<StackLayout class="page" style="height: 50%;background: mediumseagreen">
-  <Label class="my-label" text="First Modal Page" textWrap="true"></Label>
-  <!-- <Button text="Next page" (tap)="onNavigate()"></Button> -->
-    <Button text="CLOSE MODAL" (tap)="onClose()"></Button>
-</StackLayout>
+<StackLayout shadow [elevation]="myElevation" cornerRadius="5" class="page" style="border-radius:10px;width:60%;height: 40%;background: mediumseagreen;box-shadow: 2px 5px 15px #888888;">
+    <!-- <Button text="Next page" (tap)="onNavigate()"></Button> -->
+    <!-- Load image from app/images folder -->
+    <DockLayout style="float : right;margin-left:-20px"  stretchLastChild="false">
+      <!-- <Image  dock="right"  horizontalAlignment="center" src="~/images/cross.png" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15"></Image>	 -->
+      <!-- <Label text="right" dock="right" width="60" backgroundColor="blue"/> -->
+      <img style="margin-right:20px;margin-top:10px" dock="right" src="~/images/cross.png" height="7%" >
+    </DockLayout>
+    <img style="margin-top:5%" src="~/images/password.png" height="25%" />
+    <!-- <Image height="80" backgroundColor="lightgray" horizontalAlignment="center" src="~/images/password.png" stretch="none" class="img-rounded p-l-15 p-r-15 p-t-15"></Image> -->
+    <Label horizontalAlignment="center" style="font-size:18" class="my-label" text="Enter Transaction Pin" textWrap="true"></Label>
+    <StackLayout class="set-margin" orientation="horizontal" width="300" height="50">
+      <TextField width="15%" height="50" hint="5" keyboardType="number" text="{{ tfDateTimeText }}" style="text-align: center;border-width:2 2 2 2;border-color: rgb(238, 177, 8);"></TextField>
+      <TextField width="15%" height="50" hint="8" keyboardType="number" text="{{ tfDateTimeText }}" style="text-align: center;border-width:2 2 2 2;border-color: rgb(238, 177, 8);"></TextField>
+      <TextField width="15%" height="50" hint="9" keyboardType="number" text="{{ tfDateTimeText }}" style="text-align: center;border-width:2 2 2 2;border-color: rgb(238, 177, 8);"></TextField>
+      <TextField width="15%" height="50" hint="2" keyboardType="number" text="{{ tfDateTimeText }}" style="text-align: center;border-width:2 2 2 2;border-color: rgb(238, 177, 8);"></TextField>
+      <TextField width="15%" height="50" hint="4" keyboardType="number" text="{{ tfDateTimeText }}" style="text-align: center;border-width:2 2 2 2;border-color: rgb(238, 177, 8);"></TextField>
+  
+    </StackLayout>
+    <FlexboxLayout class="set-margin" justifyContent="center" width="300">
+      <Label style="font-size:14px" class="my-label" text="Forgot Pin?" textWrap="true"></Label>
+      <Label style="color:red;font-size:14px" class="my-label" text="Reset here" textWrap="true"></Label>
+    </FlexboxLayout>
+  
+    <Button backgroundColor="#EEFF41" color="white" text="VERIFY TRANSACTION PIN" (tap)="onClose()"></Button>
+  </StackLayout>

@@ -113,16 +113,69 @@ import { RadSideDrawerComponent, SideDrawerType } from "nativescript-ui-sidedraw
 import { RadSideDrawer } from 'nativescript-ui-sidedrawer';
 
 @Component({
-  moduleId: module.id,
-  selector: 'app-vendordashboard',
-  templateUrl: './vendordashboard.component.html',
-  styleUrls: ['./vendordashboard.component.scss']
+    moduleId: module.id,
+    selector: 'app-vendordashboard',
+    templateUrl: './vendordashboard.component.html',
+    styleUrls: ['./vendordashboard.component.scss']
 })
 export class VendordashboardComponent implements AfterViewInit, OnInit {
     private _mainContentText: string;
+      expandedItemIndex: number;
 
-    constructor(private _changeDetectionRef: ChangeDetectorRef) {
+    constructor(private _changeDetectionRef: ChangeDetectorRef, page: Page) {
+        page.actionBarHidden = true;
     }
+    expand(i: number) {
+             console.warn('this is a inde ===> ', i)
+             if (this.expandedItemIndex >= 0 && this.expandedItemIndex === i) {
+               this.expandedItemIndex = null;
+               return;
+             }
+        this.expandedItemIndex = i;
+    }
+    data: {
+        coverUrl: string;
+        name: string;
+        date: string;
+        price: string;
+        orderId: number;
+    }[] = [
+            {
+                coverUrl: 'backarrow.png',
+                name: 'Nikon D3400 24.9MP - Black',
+                date: '15 March,2018',
+                price: 'N8,850.00',
+                orderId: 12345
+            },
+            {
+                coverUrl: 'forwardarrow.png',
+                name: 'Nikon D3400 24.9MP - Black',
+                date: '15 March,2018',
+                price: 'N8,850.00',
+                orderId: 12345
+            },
+            {
+                coverUrl: 'backarrow.png',
+                name: 'Nikon D3400 24.9MP - Black',
+                date: '15 March,2018',
+                price: 'N8,850.00',
+                orderId: 12345
+            },
+            {
+                coverUrl: 'backarrow.png',
+                name: 'Nikon D3400 24.9MP - Black',
+                date: '15 March,2018',
+                price: 'N8,850.00',
+                orderId: 12345
+            },
+            {
+                coverUrl: 'backarrow.png',
+                name: 'Nikon D3400 24.9MP - Black',
+                date: '15 March,2018',
+                price: 'N8,850.00',
+                orderId: 12345
+            },
+        ];
 
     @ViewChild(RadSideDrawerComponent) public drawerComponent: RadSideDrawerComponent;
     private drawer: RadSideDrawer;

@@ -30,6 +30,7 @@
         </ns:Carousel.itemTemplate>
     </ns:Carousel> -->
 <!-- </StackLayout> -->
+
 <StackLayout>
   <StackLayout style="width:100%;height:7%;background-color: black" orientation="horizontal">
 
@@ -51,10 +52,10 @@
 
   <ScrollView style="height:84.5%" orientation="vertical" sdkExampleTitle sdkToggleNavButton>
     <StackLayout>
-      <FlexLayout style="height:25%">
-        <img src="~/images/Layer2.png" />
-      </FlexLayout>
-
+      <!-- <FlexLayout style="height:25%">
+          <img src="~/images/Layer2.png" />
+        </FlexLayout> -->
+      <GridLayout height="230" [carousel]="images" carouselLabelOverlay="true" carouselSpeed="2000"> </GridLayout>
       <StackLayout shadow="2" style="width:90%;height:18%;margin-top:2%" orientation="horizontal">
         <StackLayout shadow="3" style="width:33%;margin-right:2%;height:100%">
           <StackLayout style="height: 100%;width: 100%;">
@@ -99,7 +100,7 @@
         <StackLayout style="width:50%">
 
           <FlexLayout>
-            <img src="~/images/Layer15.png"/>
+            <img src="~/images/Layer15.png" />
           </FlexLayout>
           <FlexLayout>
             <img src="~/images/Layer16.png" />
@@ -110,26 +111,24 @@
         </StackLayout>
       </StackLayout>
 
-      </StackLayout>
-      </ScrollView>
-      <!-- <StackLayout style="height:12%;background-color: crimson;position: absolute">
-  </StackLayout> -->
-      <StackLayout orientation="horizontal" style="background-color: orange;bottom:0;height:9%;margin:0% 0%;padding:10;position: absolute">
-        <StackLayout width="25%" height="100%">
-          <img src="~/images/folder.png" style="background-color: red" style="height:20;width:35" />
-          <label style="text-align:center;color: white;font-size:10" text="Shop"></label>
-        </StackLayout>
-        <StackLayout width="25%" height="100%">
-          <img src="~/images/Home_Dashboard.png" style="background-color: red" style="height:20;width:35" />
-          <label style="text-align:center;color: white;font-size:10" text="Track Order"></label>
-        </StackLayout>
-        <StackLayout width="25%" height="100%">
-          <img src="~/images/settings (1).png" style="background-color: red" style="height:20;width:35" />
-          <label style="text-align:center;color: white;font-size:10" text="Acept/Deny"></label>
-        </StackLayout>
-        <StackLayout width="25%" height="100%">
-          <img src="~/images/tabs.png" style="background-color: red" style="height:20;width:35" />
-          <label style="text-align:center;color: white;font-size:10" text="My Account"></label>
-        </StackLayout>
-      </StackLayout>
     </StackLayout>
+  </ScrollView>
+  <StackLayout orientation="horizontal" style="background-color: orange;bottom:0;height:8%;margin:0% 0%;padding:10;position: absolute">
+    <StackLayout width="25%" height="100%">
+      <img src="~/images/folder.png" style="background-color: red" style="height:20;width:35" />
+      <label style="text-align:center;color: white;font-size:10" text="Shop"></label>
+    </StackLayout>
+    <StackLayout width="25%" height="100%">
+      <img src="~/images/Home_Dashboard.png" style="background-color: red" style="height:20;width:35" />
+      <label style="text-align:center;color: white;font-size:10" text="Track Order"></label>
+    </StackLayout>
+    <StackLayout width="25%" height="100%">
+      <img src="~/images/settings (1).png" style="background-color: red" style="height:20;width:35" />
+      <label style="text-align:center;color: white;font-size:10" text="Acept/Deny"></label>
+    </StackLayout>
+    <StackLayout width="25%" height="100%">
+      <img src="~/images/tabs.png" style="background-color: red" style="height:20;width:35" />
+      <label style="text-align:center;color: white;font-size:10" text="My Account"></label>
+    </StackLayout>
+  </StackLayout>
+</StackLayout>

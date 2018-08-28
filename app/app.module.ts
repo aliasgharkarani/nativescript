@@ -63,7 +63,7 @@ declare var GMSServices: any;
         AppComponent,
         ItemsComponent,
         ItemDetailComponent,
-        VendordashboardComponent
+        WebviewformComponent
     ],
     providers: [
         ItemService,
