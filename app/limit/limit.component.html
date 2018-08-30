@@ -1,0 +1,105 @@
+<!-- <ActionBar title="CooperSwitch" android.icon="res://icon" android.iconVisibility="always"></ActionBar> -->
+<ActionBar style="background-color:black">
+
+    <GridLayout rows="*" columns="40,*,70">
+
+
+        <GridLayout col="0">
+            <Label class="fa" [text]="'fa-align-left' | fonticon" horizontalAlignment="left" style="margin-left: 3em;  color:white; font-size:20px"></Label>
+
+        </GridLayout>
+
+        <GridLayout col="1">
+            <Image src="res://home_logo" style="width: 60%;" class="initial-logo"></Image>
+
+        </GridLayout>
+        <GridLayout col="2" [nsRouterLink]="['/mycart']" columns="*,*">
+            <Label col="0" class="fa" [text]="'fa-bell' | fonticon" horizontalAlignment="left" style="  color:white; font-size:20px"></Label>
+            <Label col="1" class="fa" [text]="'fa-search' | fonticon" style=" color:white; font-size:20px"></Label>
+
+        </GridLayout>
+    </GridLayout>
+
+</ActionBar>
+
+
+<StackLayout>
+    <GridLayout rows="*" columns="70,*" height="50" style="background-color: black; color: white;">
+        <GridLayout row="0" col="0">
+            <Image src="res://euro" style="width: 30%;" class="initial-logo"></Image>
+        </GridLayout>
+
+        <GridLayout row="0" col="1" rows="*,*" columns="*">
+            <Label row="0" col="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Increase Limit"
+                style="font-size: 14px;"></Label>
+            <Label row="1" col="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Having issues with transaction limits? Fill the form bellow to increase the limit"
+                style="font-size: 9px;"></Label>
+
+        </GridLayout>
+
+    </GridLayout>
+    <GridLayout rows="*,auto" style="background-color: #EFEFEF;">
+        <ScrollView>
+
+
+            <GridLayout row="0" rows="auto,*" margin="15">
+
+
+                <GridLayout row="0">
+                    <CardView class="cardStyle" margin="3" elevation="10" radius="1">
+                        <GridLayout row="0" rows="*,*,*,*,90" class="form" margin="20">
+
+                            <GridLayout row="0">
+
+                                <TextField hint="Enter Staff ID" secure="true" class="input border-bottom" [(ngModel)]="password"></TextField>
+
+                            </GridLayout>
+
+                            <GridLayout row="1">
+                            
+                                <TextField hint="Enter Desired Limit" secure="true" class="input border-bottom" [(ngModel)]="password"></TextField>
+                            
+                            </GridLayout>
+
+                        <StackLayout row="2" >
+                            <FAB (tap)="fabTap()" hideAnimationDuration  icon="res://limit" rippleColor="#f1f1f1" class="fab-button" style="background-color: white; border-width: 1; border-color: yellow; "></FAB>
+                        </StackLayout>
+
+                        <GridLayout row="3">
+                            <Label   class="createdOn text-center" horizontalAlignment="center" textWrap="true" text="Upload proof, supported file format .png, .jpg and .gif" style="font-size: 11px; text-align: center; margin-top: 3em;"></Label>
+                        </GridLayout>
+                         
+
+                            <GridLayout row="4">
+
+                                <Button [nsRouterLink]="['/register']" class="btn btn-primary w-full loginbutton" text="SUBMIT" (tap)="login()"></Button>
+
+                            </GridLayout>
+
+
+                        </GridLayout>
+
+                    </CardView>
+                </GridLayout>
+
+                <StackLayout row="1" class="tapone">
+                    <FAB (tap)="fabTap()" icon="res://cancel" rippleColor="#f1f1f1" class="fab-button" style="background-color: #F81616;"></FAB>
+                </StackLayout>
+
+            </GridLayout>
+
+        </ScrollView>
+        <GridLayout row="1" rows="*, auto">
+            <StackLayout row="0">
+
+            </StackLayout>
+            <BottomNavigation activeColor="white" inactiveColor="white" backgroundColor="#FF7800" keyLineColor="black" (tabSelected)="onBottomNavigationTabSelected($event)"
+                row="1">
+                <BottomNavigationTab title="Home" icon="home"></BottomNavigationTab>
+                <BottomNavigationTab title="Transactions" icon="transaction"></BottomNavigationTab>
+                <BottomNavigationTab title="Shop" icon="shop"></BottomNavigationTab>
+                <BottomNavigationTab title="My Account" icon="user"></BottomNavigationTab>
+            </BottomNavigation>
+        </GridLayout>
+    </GridLayout>
+</StackLayout>

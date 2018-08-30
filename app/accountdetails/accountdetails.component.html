@@ -1,0 +1,218 @@
+<!-- <ActionBar title="CooperSwitch" android.icon="res://icon" android.iconVisibility="always"></ActionBar> -->
+<ActionBar style="background-color:black">
+
+    <GridLayout rows="*" columns="40,*,70">
+
+
+        <GridLayout col="0">
+            <Label class="fa" [text]="'fa-arrow-left' | fonticon" horizontalAlignment="left" style="margin-left: 3em;  color:white; font-size:20px"></Label>
+
+        </GridLayout>
+
+        <GridLayout col="1">
+            <Image src="res://home_logo" style="width: 60%;" class="initial-logo"></Image>
+
+        </GridLayout>
+        <GridLayout col="2" [nsRouterLink]="['/mycart']" columns="*,*">
+            <Label col="0" class="fa" [text]="'fa-bell' | fonticon" horizontalAlignment="left" style="  color:white; font-size:20px"></Label>
+            <Label col="1" class="fa" [text]="'fa-search' | fonticon" style=" color:white; font-size:20px"></Label>
+
+        </GridLayout>
+    </GridLayout>
+
+</ActionBar>
+
+
+<StackLayout>
+    <GridLayout rows="*" columns="90,auto,auto,auto" paddingbottom="10" height="70" style="background-color: black; color: white;">
+        <GridLayout row="0" col="0" height="90">
+            <Image src="res://profile_pix" style="width: 120%; height: 120%" class="initial-logo"></Image>
+        </GridLayout>
+    
+        <GridLayout row="0" col="1" rows="*,*" columns="*">
+            <Label row="0" col="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Bukola Saraki" style="font-size: 14px; color: red;"></Label>
+            <Label row="1" col="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Cooper ID: 234567"
+                style="font-size: 12px;"></Label>
+    
+        </GridLayout>
+
+        <GridLayout row="0" col="2" rows="*,*" columns="*">
+            <Label row="1" col="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Member Since: 2015" style="font-size: 12px; margin-left: 5em;"></Label>
+           
+        </GridLayout>
+
+        <GridLayout row="0" col="3" rows="*,*" columns="*">
+            <Label row="0" col="0" class="createdOn text-right" horizontalAlignment="right" textWrap="true" text="Account Balance" style="font-size: 13px;"></Label>
+            <Label row="1" col="0" class="createdOn text-right" horizontalAlignment="right" textWrap="true" text="N 6,754,000.00"
+                style="font-size: 12px;"></Label>
+        
+        </GridLayout>
+    
+    </GridLayout>
+    <GridLayout rows="*,auto" style="background-color: #EFEFEF;">
+        <ScrollView>
+
+
+            <GridLayout row="0" rows="*,*,*,*,*,*" margin="15">
+
+            <GridLayout row="0"  rows="*,*,*,*">
+                <GridLayout row="0" columns="*,50">
+                    <GridLayout col="0" rows="30,*,*">
+                     <Label row="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Account Settings" style="font-size: 18em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+                    <Label row="1" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="View Profile" style="font-size: 16em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+                    
+                    <Label row="2"  class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="view and edit your profile"
+                        style="font-size: 14em; color: black;"></Label>
+                    </GridLayout>
+
+                    <GridLayout col="1" rows="*,*" margintop="15">
+
+       <Label class="fa" [text]="'fa-angle-right' | fonticon" horizontalAlignment="right" style="margin-right: 3em;  color:#FF7800; font-size:50px"></Label>
+                  
+
+                    </GridLayout>
+
+                   
+                </GridLayout>
+                <StackLayout row="1" class="arrow" margintop="20" >
+                    <Image src="res://arrow" class="initial-logo"  horizontalAlignment="left" ></Image>
+                </StackLayout>
+                </GridLayout>
+
+            <GridLayout row="1" rows="*,*,*,*">
+                <GridLayout row="0" columns="*,50">
+                    <GridLayout col="0" rows="30,*" margintop="10">
+                        <Label row="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Manage Transaction Pin" style="font-size: 16em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+            
+                        <Label row="1" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Change or remove your transaction pin" style="font-size: 14em; color: black;"></Label>
+                    </GridLayout>
+            
+                    <GridLayout col="1" rows="*,*" margintop="10">
+            
+                        <Label class="fa" [text]="'fa-angle-right' | fonticon" horizontalAlignment="right" style="margin-right: 3em;  color:#FF7800; font-size:50px"></Label>
+            
+            
+                    </GridLayout>
+            
+            
+                </GridLayout>
+                <StackLayout row="1" class="arrow" margintop="20">
+                    <Image src="res://arrow" class="initial-logo" horizontalAlignment="left"></Image>
+                </StackLayout>
+            </GridLayout>
+
+            <GridLayout row="2" rows="*,*,*,*">
+                <GridLayout row="0" columns="*,50">
+                    <GridLayout col="0" rows="30,*" margintop="10">
+                        <Label row="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Change Password" style="font-size: 16em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+            
+                        <Label row="1" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Update your password"
+                            style="font-size: 14em; color: black;"></Label>
+                    </GridLayout>
+            
+                    <GridLayout col="1" rows="*,*" margintop="10">
+            
+                        <Label class="fa" [text]="'fa-angle-right' | fonticon" horizontalAlignment="right" style="margin-right: 3em;  color:#FF7800; font-size:50px"></Label>
+            
+            
+                    </GridLayout>
+            
+            
+                </GridLayout>
+                <StackLayout row="1" class="arrow" margintop="20">
+                    <Image src="res://arrow" class="initial-logo" horizontalAlignment="left"></Image>
+                </StackLayout>
+            </GridLayout>
+
+
+            <GridLayout row="3" rows="*,*,*,*">
+                <GridLayout row="0" columns="*,50">
+                    <GridLayout col="0" rows="30,*,*" margintop="10">
+                        <Label row="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Business Settings" style="font-size: 18em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+                        <Label row="1" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Manage Cooperatives" style="font-size: 16em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+            
+                        <Label row="2" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Add, update and remove cooperative accounts"
+                            style="font-size: 14em; color: black;"></Label>
+                    </GridLayout>
+            
+                    <GridLayout col="1" rows="*,*" margintop="25">
+            
+                        <Label class="fa" [text]="'fa-angle-right' | fonticon" horizontalAlignment="right" style="margin-right: 3em;  color:#FF7800; font-size:50px"></Label>
+            
+            
+                    </GridLayout>
+            
+            
+                </GridLayout>
+                <StackLayout row="1" class="arrow" margintop="20">
+                    <Image src="res://arrow" class="initial-logo" horizontalAlignment="left"></Image>
+                </StackLayout>
+            </GridLayout>
+
+            <GridLayout row="4" rows="*,*,*,*">
+                <GridLayout row="0" columns="*,50">
+                    <GridLayout col="0" rows="30,*" margintop="10">
+                        <Label row="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Request Limit Increase" style="font-size: 16em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+            
+                        <Label row="1" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Send us a proof of your transaction along with cooper id to increase limit"
+                            style="font-size: 14em; color: black;"></Label>
+                    </GridLayout>
+            
+                    <GridLayout col="1" rows="*,*" margintop="10">
+            
+                        <Label class="fa" [text]="'fa-angle-right' | fonticon" horizontalAlignment="right" style="margin-right: 3em;  color:#FF7800; font-size:50px"></Label>
+            
+            
+                    </GridLayout>
+            
+            
+                </GridLayout>
+                <StackLayout row="1" class="arrow" margintop="20">
+                    <Image src="res://arrow" class="initial-logo" horizontalAlignment="left"></Image>
+                </StackLayout>
+            </GridLayout>
+
+
+            <GridLayout row="5" rows="*,*">
+                <GridLayout row="0" columns="*">
+                    <GridLayout col="0" rows="30,*,*,*,*" margintop="10">
+                       
+                        <Label row="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="About App" style="font-size: 16em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+            
+                        <Label row="1" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Version"
+                            style="font-size: 16em; color: black; margin-top: 5em;"></Label>
+
+                        <Label row="2" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Terms and Conditions" style="font-size: 16em; color: black; margin-top: 5em;"></Label>
+                        <GridLayout row="3" columns="*,60">
+                            <Label col="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Notifications" style="font-size: 16em; color: black; margin-top: 5em;"></Label>
+                        <Slider minValue="10" maxValue="70" [(ngModel)]="sliderValue1"  col="1" style="color: #FF7800;"></Slider>
+                        </GridLayout>
+                        
+                        <Label row="4" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Logout" style="font-size: 16em; color: black; margin-top: 5em;"></Label>
+                    </GridLayout>
+            
+                
+                </GridLayout>
+               
+            </GridLayout>
+
+            </GridLayout>
+
+
+
+
+        </ScrollView>
+        <GridLayout row="1" rows="*, auto">
+            <StackLayout row="0">
+
+            </StackLayout>
+            <BottomNavigation activeColor="white" inactiveColor="white" backgroundColor="#FF7800" keyLineColor="black" (tabSelected)="onBottomNavigationTabSelected($event)"
+                row="1">
+                <BottomNavigationTab title="Home" icon="home"></BottomNavigationTab>
+                <BottomNavigationTab title="Transactions" icon="transaction"></BottomNavigationTab>
+                <BottomNavigationTab title="Shop" icon="shop"></BottomNavigationTab>
+                <BottomNavigationTab title="My Account" icon="user"></BottomNavigationTab>
+            </BottomNavigation>
+        </GridLayout>
+    </GridLayout>
+</StackLayout>

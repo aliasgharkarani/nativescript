@@ -1,0 +1,56 @@
+/* Hide a bunch of things to setup the initial animations */
+.form-controls, .sign-up-stack {
+  opacity: 0;
+}
+
+.background {
+  background-image: url("res://landbg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-primary{
+  background-color:#FF1717;
+  height: 60em;
+  font-size: 22px;
+  font-family: "Mont";
+   font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
+
+
+
+TextField{
+  color: white;
+    placeholder-color: #F7CC96;
+    background-color: white;
+    height: 50em;
+}
+
+
+.footer-buttons {
+width: 100%;
+}
+.button{
+width: 20%;
+
+font-size: 15;
+height: 60em;
+margin-bottom: 10em;
+text-transform: none;
+color: #ffffff;
+}
+.reset-button {
+background-color: #FF1717;
+color: white;
+}
+
+.checkbox{
+
+  background-color: white;
+  color: white;
+}

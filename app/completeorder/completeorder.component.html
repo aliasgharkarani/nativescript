@@ -1,0 +1,31 @@
+<GridLayout #background scaleX="1.4" scaleY="1.4" class="background" (loaded)="startBackgroundAnimation(background)">
+</GridLayout>
+
+
+<ScrollView>
+    <StackLayout margin="0.1" verticalAlignment="center" rows="auto" margin="30">
+        <GridLayout verticalAlignment="center" column="80" rows="auto, auto, auto, auto" >
+           
+            <Image  src="res://order"  stretch="aspectFit" class="initial-logo" style="width: 30%;"></Image>
+            <Label row="1" col="0" class="createdOn text-center" horizontalAlignment="center" textWrap="true" text="Your order is on it's way"
+                style="font-size: 25em; color: white; margin-top: 30em;"></Label>
+                <Label row="2" col="0" class="createdOn text-center" horizontalAlignment="center" textWrap="true" text="Thank you for placing your order with us. You will be notified once your payment has been processed. Your order will be shipped within next 24 hours and should be with you by 15 June, 2018. Your order details are below."
+                    style="font-size: 13em; margin-top: 10em; color: rgb(229, 226, 226); font-weight: bold;"></Label>
+
+            <GridLayout row="3"  margintop="20">
+                <Button  [nsRouterLink]="['/completeorder']" class="btn btn-primary w-full loginbutton" text="CONTINUE SHOPPING" (tap)="login()"></Button>
+            </GridLayout>
+        </GridLayout>
+
+
+       
+
+
+    </StackLayout>
+
+    <!-- <StackLayout class="p-20">
+        <Button text="Success" (tap)="showSuccess()" class="btn btn-primary btn-active"></Button>
+        <Button text="Error" (tap)="showError()" class="btn btn-primary btn-active"></Button>
+        <Button text="Custom Image" (tap)="showCustomImage()" class="btn btn-primary btn-active"></Button>
+    </StackLayout> -->
+</ScrollView>

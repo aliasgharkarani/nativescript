@@ -1,0 +1,270 @@
+<!-- <ActionBar title="CooperSwitch" android.icon="res://icon" android.iconVisibility="always"></ActionBar> -->
+<ActionBar style="background-color:black">
+
+    <GridLayout rows="*" columns="40,*,70">
+
+
+        <GridLayout col="0">
+            <Label class="fa" [text]="'fa-arrow-left' | fonticon" horizontalAlignment="left" style="margin-left: 3em;  color:white; font-size:20px"></Label>
+
+        </GridLayout>
+
+        <GridLayout col="1">
+            <Image src="res://home_logo" style="width: 60%;" class="initial-logo"></Image>
+
+        </GridLayout>
+        <GridLayout col="2" [nsRouterLink]="['/mycart']" columns="*,*">
+            <Label col="0" class="fa" [text]="'fa-bell' | fonticon" horizontalAlignment="left" style="  color:white; font-size:20px"></Label>
+            <Label col="1" class="fa" [text]="'fa-search' | fonticon" style=" color:white; font-size:20px"></Label>
+
+        </GridLayout>
+    </GridLayout>
+
+</ActionBar>
+
+
+<StackLayout>
+   
+    <GridLayout rows="*,auto" style="background-color: #EFEFEF;">
+        <ScrollView>
+<GridLayout rows="*,*">
+<GridLayout row="0"  class="form">
+
+        <Image src="~/assets/images/shoe.png" stretch="aspectFit"></Image>
+
+  
+
+</GridLayout>
+                <GridLayout row="1" rows="*,*,*,*"  margin="15" >
+
+    
+
+
+
+
+
+
+    <GridLayout row="0" rows="*,*,*,*,*">
+    
+        <GridLayout row="0" rows="*,*">
+    
+           
+                <Label row="0" class="createdOn text-left" textWrap="true" text="Sole Sock Sneakers" style="font-size: 16em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+          
+                <Label row="1" textWrap="true" text="Sock-style, Elastic, Cable knit finish, Vecro fastening, Rounded toe and Contrasting sole" horizontalAlignment="left" style="margin-left: 3em;  color:black; font-size:9em;"></Label>
+          
+    
+        </GridLayout>
+    
+    
+    
+        <GridLayout row="1" rows="*,*">
+    
+            <GridLayout row="0" columns="auto,auto,auto">
+                <GridLayout col="0" columns="*,*" margintop="20" marginright="8">
+    
+                    <Button col="0" text="4.9" style="width:50;height:50;color:black;border-radius:100;border-width:2;border-color:#F7CC96;background-color:#F7CC96; font-size: 17em; color: white;"></Button>
+    
+                    <Label col="1" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="1366 Reviews" style="font-size: 9em; color: black;  font-family: Mont; font-weight: bold; margin-top: 20em; margin-left: 5em;"></Label>
+                </GridLayout>
+    
+                <GridLayout col="1" columns="*,*" margintop="20">
+    
+                    <Button col="0" class="fa" [text]="'fa-heart' | fonticon"  style="width:50;height:50;color:black;border-radius:100;border-width:2;border-color:#F7CC96;background-color:#F7CC96; font-size: 17em; color: white;"></Button>
+                    
+                    <Label col="1" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="136 People Liked" style="font-size: 9em; color: black;  font-family: Mont; font-weight: bold;  margin-top: 20em; margin-left: 5em;"></Label>
+                </GridLayout>
+    
+                <GridLayout col="2" columns="*,*" margintop="20" marginleft="8">
+    <Button col="0" class="fa" [text]="'fa-shopping-cart' | fonticon" style="width:50;height:50;color:black;border-radius:100;border-width:2;border-color:#F7CC96;background-color:#F7CC96; font-size: 17em; color: white;"></Button>
+    
+    <Label col="1" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="166 Items Sold" style="font-size: 9em; color: black;  font-family: Mont; font-weight: bold;  margin-top: 20em; margin-left: 5em;"></Label>
+                </GridLayout>
+    
+    
+            </GridLayout>
+            <StackLayout row="1" class="arrow" margintop="20">
+                <Image src="res://arrow" class="initial-logo" marginright="20" horizontalAlignment="left" style=" color:white; font-size:20px"></Image>
+            </StackLayout>
+        </GridLayout>
+    
+    
+    
+        <GridLayout row="2" rows="*,*">
+    
+            <GridLayout row="0" columns="auto,*">
+                <GridLayout col="0" margintop="20" marginright="15">
+    
+                <Label col="1" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Size:" style="font-size: 16em; color: black;  font-family: Mont; font-weight: bold;  "></Label>
+    
+    
+                </GridLayout>
+    
+                
+    
+                <GridLayout col="1" columns="*,*,*,*,*" margintop="10" marginleft="15">
+    
+                            <Button col="0" text="5" style="width:50;height:50;color:black;border-radius:100;border-width:2;border-color:#F7CC96;background-color:rgb(241, 238, 238); font-size: 17em; color: black;"></Button>
+
+                            <Button col="1" text="6" style="width:50;height:50;color:black;border-radius:100;border-width:2;border-color:#F7CC96;background-color:#F7CC96; font-size: 17em; color: white; margin-left: 5em;"></Button>
+
+                            <Button col="2" text="7" style="width:50;height:50;color:black;border-radius:100;border-width:2;border-color:#F7CC96;background-color:rgb(241, 238, 238); font-size: 17em; color: black; margin-left: 5em;"></Button>
+
+                            <Button col="3" text="8" style="width:50;height:50;color:black;border-radius:100;border-width:2;border-color:rgb(158, 157, 156);background-color:rgb(241, 238, 238); font-size: 17em; color: black; margin-left: 5em;"></Button>
+
+                            <Button col="4" text="9" style="width:50;height:50;color:black;border-radius:100;border-width:2;border-color:#F7CC96;background-color:rgb(241, 238, 238); font-size: 17em; color: black; margin-left: 5em;"></Button>
+    
+                </GridLayout>
+    
+    
+            </GridLayout>
+            <StackLayout row="1" class="arrow" margintop="20">
+                <Image src="res://arrow" class="initial-logo" marginright="20" horizontalAlignment="left" style=" color:white; font-size:20px"></Image>
+            </StackLayout>
+        </GridLayout>
+    
+    <GridLayout row="3" rows="*,*">
+    
+        <GridLayout row="0" columns="auto,*">
+            <GridLayout col="0" margintop="20" marginright="15">
+    
+                <Label col="1" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Color:" style="font-size: 16em; color: black;  font-family: Mont; font-weight: bold;  "></Label>
+    
+    
+            </GridLayout>
+    
+    
+    
+            <GridLayout col="1" columns="*,*,*,*,*" margintop="10" marginleft="15">
+    
+                <Button col="0"  style="width:50;height:50;color:black;border-radius:100;border-width:2;border-color:#82E5CD;background-color:#82E5CD; font-size: 17em; color: black;"></Button>
+    
+                <Button col="1" class="fa" [text]="'fa-check' | fonticon" style="width:50;height:50;color:white;border-radius:100;border-width:2;border-color:#FF7D7D;background-color:#FF7D7D; font-size: 17em; color: white; margin-left: 2em;"></Button>
+    
+                <Button col="2"  style="width:50;height:50;color:black;border-radius:100;border-width:2;border-color:#FFF266;background-color:#FFF266; font-size: 17em; color: black; margin-left: 2em;"></Button>
+    
+                <Button col="3"  style="width:50;height:50;color:black;border-radius:100;border-width:2;border-color:#7DFF9C;background-color:#7DFF9C; font-size: 17em; color: black; margin-left: 2em;"></Button>
+    
+                <Button col="4"  style="width:50;height:50;color:black;border-radius:100;border-width:2;border-color:#FF457E;background-color:#FF457E; font-size: 17em; color: black; margin-left: 2em;"></Button>
+    
+            </GridLayout>
+    
+    
+        </GridLayout>
+        <StackLayout row="1" class="arrow" margintop="20">
+            <Image src="res://arrow" class="initial-logo" marginright="20" horizontalAlignment="left" style=" color:white; font-size:20px"></Image>
+        </StackLayout>
+    </GridLayout>
+
+
+    <GridLayout row="4" rows="*,*,*,*">
+
+
+    <GridLayout row="0"  columns="auto,*,*">
+
+<GridLayout col="0">
+    <Label text="Quantity:" horizontalAlignment="left" style="  color:black; font-size:16em; margin-top: 10em; font-weight: bold;"></Label>
+</GridLayout>
+
+<GridLayout col="1" columns="auto,40,auto" marginleft="10" margintop="10">
+    <Label col="0" class="fa" [text]="'fa-plus' | fonticon" horizontalAlignment="left" style="margin-left: 3em;  color:black; font-size:14em; margin-right: 10em; margin-top: 10em;"></Label>
+
+
+    <Button col="1" horizontalAlignment="left" class="fa" text="1" style="width:35;height:35;color:black;border-radius:1;border-width:2;border-color:#F7CC96;background-color:white; font-size: 14em; text-align: center; ">
+    </Button>
+
+    <Label col="2" class="fa" [text]="'fa-minus' | fonticon" horizontalAlignment="left" style="  color:black; font-size:14em; margin-left: 10em; margin-top: 10em;"></Label>
+</GridLayout>
+
+
+<GridLayout col="2" rows="*,*">
+    <Label row="0" text="25800" horizontalAlignment="right" style="  color:#F7CC96; font-size:14em;  margin-top: 10em;"></Label>
+
+    <Label row="1" text="In Stock" horizontalAlignment="right" style="  color:black; font-size:14em; ; margin-top: 10em;"></Label>
+
+</GridLayout>
+
+
+    </GridLayout>
+
+<GridLayout row="1" class="arrow" margintop="20">
+    <Image src="res://arrow" class="initial-logo" marginright="20" horizontalAlignment="left" style=" color:white; font-size:20px"></Image>
+</GridLayout>
+
+
+<GridLayout row="2" rows="*,*" columns="*,*,*,*" margintop="20">
+
+
+<Label row="0" col="0" text="Description    |" textWrap="true" horizontalAlignment="center" style="  color:black; font-size:14em; ; margin-top: 10em;"></Label>
+
+<Label row="0" col="1" text="Reviews    |" textWrap="true" horizontalAlignment="center" style="  color:black; font-size:14em; ; margin-top: 10em;"></Label>
+
+<Label row="0" col="2" text="Gallery    |" textWrap="true" horizontalAlignment="left" style="  color:black; font-size:14em; ; margin-top: 10em;"></Label>
+
+<Label row="0" col="3" text="Shipping " textWrap="true" horizontalAlignment="left" style="  color:black; font-size:14em; ; margin-top: 10em;"></Label>
+
+
+<GridLayout row="1" class="arrow" margintop="20">
+    <Image src="res://arrow" class="initial-logo" marginright="20" horizontalAlignment="left" style=" color:white; font-size:20px"></Image>
+</GridLayout>
+</GridLayout>
+
+
+<GridLayout  row="3" rows="*,*,*,*" >
+
+    <GridLayout row="0" rows="*" columns="80,*" backgroundColor="#F7F0E7">
+<Label  col="0" text="Brand: " textWrap="true" horizontalAlignment="left" style="  color:black; font-size:14em; padding: 5em; margin-left: 2em;"></Label>
+
+<Label col="1" text="Nike " textWrap="true" horizontalAlignment="left" style="  color:black; font-size:14em; padding: 5em;"></Label>
+
+    </GridLayout>
+
+    <GridLayout row="1" columns="80,*" rows="*" backgroundColor="rgb(230, 228, 228)">
+        <Label col="0" text="Closure Type: " textWrap="true" horizontalAlignment="left" style="  color:black; font-size:14em; padding: 5em; margin-left: 2em;"></Label>
+    
+        <Label col="1" text="Lace Up " textWrap="true" horizontalAlignment="left" style="  color:black; font-size:14em; padding: 5em;"></Label>
+    
+    </GridLayout>
+
+
+    <GridLayout row="3" rows="*" columns="80,*" backgroundColor="#F7F0E7">
+        <Label col="0" text="Model Number: " textWrap="true" horizontalAlignment="left" style="  color:black; font-size:14em; padding: 5em; margin-left: 2em;"></Label>
+    
+        <Label col="1" text="3e4344 " textWrap="true" horizontalAlignment="left" style="  color:black; font-size:14em; padding: 5em;"></Label>
+    
+    </GridLayout>
+
+
+</GridLayout>
+
+    </GridLayout>
+    
+    </GridLayout>
+
+    
+
+
+                </GridLayout>
+
+</GridLayout> 
+
+
+        </ScrollView>
+        <GridLayout row="2" rows="70" columns="*,*">
+        
+            <GridLayout col="0" rows="*,*" style="background-color: #FF1717;">
+                <Label row="0" margintop="5" marginleft="15" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Cart Total"
+                    style="font-size: 14em; color: white;  font-family: Mont;  "></Label>
+        
+                <Label row="1" marginleft="15" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="N 2,546,556,000.00"
+                    style="font-size: 18em; color: white;  font-family: Mont; font-weight: bold;"></Label>
+        
+            </GridLayout>
+        
+            <GridLayout col="1" style="background-color: #FF7800;">
+                <Label row="0" class="createdOn text-left" horizontalAlignment="center" textWrap="true" text="PROCEED TO CHECKOUT" style="font-size: 18em; color: white;  font-family: Mont; font-weight: bold; margin-top: 20em;"></Label>
+        
+            </GridLayout>
+        </GridLayout>
+    </GridLayout>
+</StackLayout>

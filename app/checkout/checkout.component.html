@@ -1,0 +1,232 @@
+<!-- <ActionBar title="CooperSwitch" android.icon="res://icon" android.iconVisibility="always"></ActionBar> -->
+<ActionBar style="background-color:black">
+
+    <GridLayout rows="*" columns="40,*,70">
+
+
+        <GridLayout col="0">
+            <Label class="fa" [text]="'fa-arrow-left' | fonticon" horizontalAlignment="left" style="margin-left: 3em;  color:white; font-size:20px"></Label>
+
+        </GridLayout>
+
+        <GridLayout col="1">
+            <Image src="res://home_logo" style="width: 60%;" class="initial-logo"></Image>
+
+        </GridLayout>
+        <GridLayout col="2" [nsRouterLink]="['/mycart']" columns="*,*">
+            <Label col="0" class="fa" [text]="'fa-bell' | fonticon" horizontalAlignment="left" style="  color:white; font-size:20px"></Label>
+            <Label col="1" class="fa" [text]="'fa-search' | fonticon" style=" color:white; font-size:20px"></Label>
+
+        </GridLayout>
+    </GridLayout>
+
+</ActionBar>
+
+
+<StackLayout>
+   
+    <GridLayout rows="*,auto" style="background-color: #EFEFEF;">
+        <ScrollView>
+
+
+                <GridLayout row="0" rows="*,*,*,*"  margin="15" >
+
+            <GridLayout row="0" >
+    <CardView class="cardStyle" margin="3" elevation="10" radius="1">
+
+    <GridLayout row="0" rows="*,*,*,*,*" margin="15">
+     
+            <GridLayout row="0" rows="30,*,*">
+                <Label row="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Review Order" style="font-size: 18em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+               
+            </GridLayout>
+
+            <StackLayout row="1" class="arrow" margintop="10">
+                <Image src="res://arrow" class="initial-logo" horizontalAlignment="left"></Image>
+            </StackLayout>
+
+            <GridLayout row="2" columns="*,50" margintop="10">
+                <Label col="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Apple Iphone X 64GB black and white" style="font-size: 14em; color: black;  font-family: Mont;"></Label>
+                <Label col="1" class="createdOn text-left" horizontalAlignment="right" textWrap="true" text="x1" style="font-size: 18em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+                
+               
+            </GridLayout>
+
+
+            <GridLayout row="3" columns="*,50" margintop="10">
+                <Label col="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Apple Iphone X 64GB black and white"
+                    style="font-size: 14em; color: black;  font-family: Mont;"></Label>
+                <Label col="1" class="createdOn text-left" horizontalAlignment="right" textWrap="true" text="x1" style="font-size: 18em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+            
+            
+            </GridLayout>
+
+            <GridLayout row="4" columns="*,50" margintop="10">
+                <Label col="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Apple Iphone X 64GB black and white"
+                    style="font-size: 14em; color: black;  font-family: Mont;"></Label>
+                <Label col="1" class="createdOn text-left" horizontalAlignment="right" textWrap="true" text="x1" style="font-size: 18em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+            
+            
+            </GridLayout>
+    
+
+       
+    </GridLayout>
+
+</CardView>
+</GridLayout>
+
+
+
+        <GridLayout row="1">
+            <CardView class="cardStyle" margin="3" elevation="10" radius="1">
+        
+                <GridLayout row="0" rows="*,*,*,*,*" margin="15">
+        
+                    <GridLayout row="0" rows="30,*,*">
+                        <Label row="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Ship to" style="font-size: 18em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+        
+                    </GridLayout>
+        
+                    <StackLayout row="1" class="arrow" margintop="10">
+                        <Image src="res://arrow" class="initial-logo" horizontalAlignment="left"></Image>
+                    </StackLayout>
+        
+                    <GridLayout row="2" columns="*,70" margintop="10">
+                    <GridLayout row="0" rows="*,*">
+                        <Label col="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Sanusi Lamido " style="font-size: 16em; color: black;  font-family: Mont;  line-height: 1.2; font-weight: bold;"></Label>
+                    
+                        <Label row="1" margintop="5" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="18A First Floor Sector 115, urclave Enclave, Greater Mohali, Nigeria"
+                            style="font-size: 14em; color: black;  font-family: Mont;  line-height: 1.2;"></Label>
+                    
+                    </GridLayout>
+
+                    <GridLayout col="1">
+                    
+                    <Button  horizontalAlignment="right" text="ButtonCircle" class="fa" [text]="'fa-check' | fonticon" style="width:40;height:40;color:black;border-radius:100;border-width:2;border-color:#F7CC96;background-color:#F7CC96; font-size: 17em; "></Button>
+                       
+                    </GridLayout>
+                      
+        
+                    </GridLayout>
+
+
+                    <StackLayout row="3" class="arrow" margintop="10">
+                        <Image src="res://arrow" class="initial-logo" horizontalAlignment="left"></Image>
+                    </StackLayout>
+
+                <GridLayout row="4" columns="*,70" margintop="10">
+                    <GridLayout col="0">
+                
+                    <Button horizontalAlignment="right" text="ButtonCircle" class="fa" [text]="'fa-plus' | fonticon" style="width:37;height:37;color:black;border-radius:100;border-width:2;border-color:#F7CC96;background-color:white; font-size: 14em; text-align: center;">
+                    </Button>
+                    </GridLayout>
+                
+                    <GridLayout col="1">
+                
+                    <Label row="0" marginleft="10" margintop="10" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Add New" style="font-size: 18em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+                
+                    </GridLayout>
+                
+                
+                </GridLayout>
+        
+    
+        
+                </GridLayout>
+        
+            </CardView>
+        </GridLayout>
+
+
+    <GridLayout row="2">
+        <CardView class="cardStyle" margin="3" elevation="10" radius="1">
+    
+            <GridLayout row="0" rows="*,*,*,*,*,*" margin="15">
+    
+                <GridLayout row="0" rows="30,*,*">
+                    <Label row="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Cooperative" style="font-size: 18em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+    
+                </GridLayout>
+    
+                <StackLayout row="1" class="arrow" margintop="10">
+                    <Image src="res://arrow" class="initial-logo" horizontalAlignment="left"></Image>
+                </StackLayout>
+                <GridLayout row="2" columns="*,*" margintop="10">
+                
+                    <Label col="0" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Cooper ID: 345576" style="font-size: 16em; color: black;  font-family: Mont;  line-height: 1.2;"></Label>
+                
+                    <Label col="1" class="createdOn text-left" horizontalAlignment="right" textWrap="true" text="Vendor ID: 3455656" style="font-size: 16em; color: black;  font-family: Mont;  line-height: 1.2;"></Label>
+                
+                </GridLayout>
+    
+                <GridLayout row="3" columns="*,70" margintop="10">
+                    <GridLayout col="0">
+    
+                        <Label class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Best Buy Nigeria Inc"
+                            style="font-size: 16em; color: black;  font-family: Mont;  line-height: 1.2;"></Label>
+    
+                    </GridLayout>
+    
+                    <GridLayout col="1">
+    
+                        <Button horizontalAlignment="right" text="ButtonCircle" class="fa" [text]="'fa-check' | fonticon" style="width:40;height:40;color:black;border-radius:100;border-width:2;border-color:#F7CC96;background-color:#F7CC96; font-size: 17em; "></Button>
+    
+                    </GridLayout>
+    
+    
+                </GridLayout>
+    
+    
+                <StackLayout row="4" class="arrow" margintop="10">
+                    <Image src="res://arrow" class="initial-logo" horizontalAlignment="left"></Image>
+                </StackLayout>
+
+                
+    
+                <GridLayout row="5" columns="*,auto" margintop="10">
+                    <GridLayout col="0">
+                
+                        <Button horizontalAlignment="right" text="ButtonCircle" class="fa" [text]="'fa-plus' | fonticon" style="width:37;height:37;color:black;border-radius:100;border-width:2;border-color:#F7CC96;background-color:white; font-size: 14em; text-align: center;">
+                        </Button>
+                    </GridLayout>
+                
+                    <GridLayout col="1">
+                
+                        <Label row="0" marginleft="10" margintop="10" class="createdOn text-left" horizontalAlignment="right" textWrap="true" text="Select Cooperative"
+                            style="font-size: 16em; color: black;  font-family: Mont; font-weight: bold;"></Label>
+                
+                    </GridLayout>
+                
+                
+                </GridLayout>
+    
+    
+    
+            </GridLayout>
+    
+        </CardView>
+    </GridLayout>
+                </GridLayout>
+
+            
+
+
+        </ScrollView>
+        <GridLayout row="1" rows="70" columns="*,*">
+        
+            <GridLayout col="0" rows="*,*" style="background-color: #FF1717;">
+                <Label row="0" margintop="5"  marginleft="15"  class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="Cart Total"
+                    style="font-size: 14em; color: white;  font-family: Mont;  "></Label>
+
+                    <Label row="1" marginleft="15" class="createdOn text-left" horizontalAlignment="left" textWrap="true" text="N 2,546,556,000.00" style="font-size: 18em; color: white;  font-family: Mont; font-weight: bold;"></Label>
+
+            </GridLayout>
+
+            <GridLayout col="1" style="background-color: #FF7800;">
+            <Label row="0"  class="createdOn text-left" horizontalAlignment="center" textWrap="true" text="PROCEED TO CHECKOUT" style="font-size: 18em; color: white;  font-family: Mont; font-weight: bold; margin-top: 20em;"></Label>
+            
+            </GridLayout>
+        </GridLayout>
+    </GridLayout>
+</StackLayout>

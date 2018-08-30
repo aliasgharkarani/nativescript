@@ -1,0 +1,86 @@
+<ActionBar>
+    <NavigationButton text="Go Back" col="0" android.systemIcon="ic_menu_back" tap="onNavBtnTap"></NavigationButton>
+
+    <GridLayout row="0" columns="*,auto,auto">
+
+        <GridLayout col="1">
+            <Label class="fa" [text]="'fa-bell' | fonticon" horizontalAlignment="right" style=" margin-top:30px; margin-bottom:3px; margin-right:35px; color:white; font-size:20px"></Label>
+
+        </GridLayout>
+        <GridLayout col="2">
+            <Label class="fa" [text]="'fa-cart-plus' | fonticon" horizontalAlignment="right" style=" margin-top:30px; margin-bottom:3px; margin-right:35px; color:white; font-size:20px"></Label>
+
+        </GridLayout>
+    </GridLayout>
+</ActionBar>
+
+<scrollview>
+    <StackLayout margin="10" verticalAlignment="top" style="color:rgba(17, 11, 17, 0.067)">
+        <StackLayout class="input-field">
+            <GridLayout columns="0, *, 0" rows="auto, *" style="width:100%;height:130%">
+                <Image col="1" src="res://defa" style="border-radius: 110%;width: 150;height: 150;background-repeat: no-repeat;background-size: contain;border:2px solid #021a40
+                        "></Image>
+                <Image col="1" src="res://profile" style="border-radius: 110%;width: 150;height: 150;background-repeat: no-repeat;background-size: contain;border:2px solid #021a40
+                    
+                        "></Image>
+            </GridLayout>
+
+            <label text="TOBILOBA SAMMUEL" class="text-center set-pin" textWrap="true" style="margin-top:30px; margin-bottom:3px;color:black; font-weight:bold"></label>
+            <label text="Cooper ID: 123456" class="text-center set-pin"></label>
+
+        </StackLayout>
+
+
+
+        <StackLayout class="list-group" rows="auto,auto">
+            <GridLayout row="0" style="padding-left:30px;padding-top:20px" columns="auto,*" style="background-color: #e6e6e6;" class="list-group-item">
+                <Label class="fa" [text]="'fa-cogs' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                <Label col="1" style="padding-left:10px;" text="Account Setting" android:class="label-item" textWrap="true"></Label>
+            </GridLayout>
+
+
+            <GridLayout row="1" style="padding-left:30px;padding-top:20px" columns="auto,*" style="background-color: #fcfafa;" class="list-group-item">
+                <Label class="fa" [text]="'fa-user' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                <Label col="1" style="padding-left:10px;" text="View Profile" android:class="label-item" textWrap="true"></Label>
+            </GridLayout>
+
+            <GridLayout row="1" style="padding-left:30px;padding-top:20px" columns="auto,*" style="background-color: #e6e6e6;" class="list-group-item">
+                <Label class="fa" [text]="'fa-key' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                <Label col="1" style="padding-left:10px;" text="Manage Transaction Pin" android:class="label-item" textWrap="true"></Label>
+            </GridLayout>
+
+            <GridLayout row="1" style="padding-left:30px;padding-top:20px" columns="auto,*" style="background-color:#fcfafa;" class="list-group-item">
+                <Label class="fa" [text]="'fa-unlock-alt' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                <Label col="1" style="padding-left:10px;" text="Change Password" android:class="label-item" textWrap="true"></Label>
+            </GridLayout>
+
+            <GridLayout row="1" style="padding-left:30px;padding-top:20px" columns="auto,*" style="background-color: #e6e6e6;" class="list-group-item">
+                <Label class="fa" [text]="'fa-tasks' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                <Label col="1" style="padding-left:10px;" text="Push Notification" android:class="label-item" textWrap="true"></Label>
+            </GridLayout>
+
+            <GridLayout row="1" style="padding-left:30px;padding-top:20px" columns="auto,*" style="background-color:#fcfafa;" class="list-group-item">
+                <Label class="fa" [text]="'fa-plus' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                <Label col="1" style="padding-left:10px;" text="Add New Cooperative" [nsRouterLink]="['/addcooperative']" android:class="label-item" textWrap="true"></Label>
+            </GridLayout>
+
+            <GridLayout row="1" style="padding-left:30px;padding-top:20px" columns="auto,* " style="background-color: #e6e6e6;" class="list-group-item">
+                <Label class="fa" [text]="'fa-exchange' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                <Label col="1" style="padding-left:10px;" text="Request Limit Increase" android:class="label-item" textWrap="true"></Label>
+            </GridLayout>
+            <GridLayout row="1" style="padding-left:30px;padding-top:20px" columns="auto,*" style="background-color:#fcfafa;" class="list-group-item">
+                <Label class="fa" [text]="'fa-check-circle-o' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                <Label col="1" style="padding-left:10px;" text="Version" android:class="label-item" textWrap="true"></Label>
+            </GridLayout>
+
+            <GridLayout row="1" style="padding-left:30px;padding-top:20px" columns="auto,* " style="background-color: #e6e6e6;" class="list-group-item">
+                <Label class="fa" [text]="'fa-sign-out-alt' | fonticon" col="0" horizontalAlignment="center" style=" margin-top:4px; padding-right:10px;  color:#000000;font-size:15px; "></Label>
+                <Label col="1" style="padding-left:10px;" text="LogOut" android:class="label-item" textWrap="true"></Label>
+            </GridLayout>
+
+        </StackLayout>
+
+
+    </StackLayout>
+
+</scrollview>

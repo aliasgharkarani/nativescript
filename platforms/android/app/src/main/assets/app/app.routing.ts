@@ -17,9 +17,11 @@ import {PasswordComponent } from "./password/password.component"
 import {OtpComponent } from "./otp/otp.component"
 import {VendordashboardComponent} from "./vendordashboard/vendordashboard.component"
 import {WebviewformComponent} from "./webviewform/webviewform.component"
+import {ProfileComponent} from "./profile/profile.component";
+
 const routes: Routes = [
     { path: "", redirectTo: "/items", pathMatch: "full" },
-    { path: "items", component: WebviewformComponent },
+    { path: "items", component: ProfileComponent },
     // { path: "item/:id", component: ItemDetailComponent },
 ];
 

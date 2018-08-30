@@ -1,0 +1,31 @@
+<GridLayout #background scaleX="1.4" scaleY="1.4" class="background" (loaded)="startBackgroundAnimation(background)">
+</GridLayout>
+
+
+<ScrollView>
+    <StackLayout margin="0.1" verticalAlignment="center" rows="auto,auto" margin="30">
+        <GridLayout verticalAlignment="center" columns="*" rows="auto" >
+        
+          
+         <GridLayout row="0" columns="*, auto"  margin="0">
+    
+        <TextField col="0" hint="I am shopping for..."  class="input" [(ngModel)]="password"></TextField>
+  
+        <Button  col="1" text="GO" [nsRouterLink]="['/completeorder']" class="button reset-button"  (tap)="login()"></Button>
+
+
+        </GridLayout>
+        </GridLayout>
+
+        <GridLayout  row="1" margintop="10">
+            <CheckBox #CB1 text="Enable Advance Search" fillColor="white" class="checkbox" checked="false" style="color: white;"></CheckBox>
+        </GridLayout>
+      
+    </StackLayout>
+
+    <!-- <StackLayout class="p-20">
+        <Button text="Success" (tap)="showSuccess()" class="btn btn-primary btn-active"></Button>
+        <Button text="Error" (tap)="showError()" class="btn btn-primary btn-active"></Button>
+        <Button text="Custom Image" (tap)="showCustomImage()" class="btn btn-primary btn-active"></Button>
+    </StackLayout> -->
+</ScrollView>
