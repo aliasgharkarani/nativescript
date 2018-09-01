@@ -26,13 +26,13 @@ import { PhoneverifyComponent } from "~/phoneverify/phoneverify.component"
 import { ModalpageComponent } from "~/modalpage/modalpage.component"
 import { ModalParamsService } from "~/modal-params.service";
 import { MainpersonalComponent } from "~/mainpersonal/mainpersonal.component"
-import { MyshopComponent } from "~/myshop/myshop.component"
+// import { MyshopComponent } from "~/myshop/myshop.component"
 import { VendordashboardComponent } from "~/vendordashboard/vendordashboard.component"
 import { NgShadowModule } from 'nativescript-ng-shadow';
 import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
 import {WebviewformComponent } from "./webviewform/webviewform.component"
 import {CarouselDirective} from "nativescript-ng2-carousel/nativescript-ng2-carousel";
-import {ProfileComponent} from "./profile/profile.component";
+// import {ProfileComponent} from "./profile/profile.component";
 
 declare var GMSServices: any;
 
@@ -66,7 +66,7 @@ declare var GMSServices: any;
         AppComponent,
         ItemsComponent,
         ItemDetailComponent,
-        ProfileComponent,
+        WebviewformComponent
     ],
     providers: [
         ItemService,

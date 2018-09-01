@@ -12,16 +12,16 @@ import {Login1Component} from "./login1/login1.component"
 import {PhoneverifyComponent} from "./phoneverify/phoneverify.component"
 import {ModalpageComponent} from "./modalpage/modalpage.component"
 import {MainpersonalComponent} from "./mainpersonal/mainpersonal.component"
-import {MyshopComponent} from "./myshop/myshop.component"
+// import {MyshopComponent} from "./myshop/myshop.component"
 import {PasswordComponent } from "./password/password.component"
-import {OtpComponent } from "./otp/otp.component"
+// import {OtpComponent } from "./otp/otp.component"
 import {VendordashboardComponent} from "./vendordashboard/vendordashboard.component"
 import {WebviewformComponent} from "./webviewform/webviewform.component"
-import {ProfileComponent} from "./profile/profile.component";
+// import {ProfileComponent} from "./profile/profile.component";
 
 const routes: Routes = [
     { path: "", redirectTo: "/items", pathMatch: "full" },
-    { path: "items", component: ProfileComponent },
+    { path: "items", component: WebviewformComponent },
     // { path: "item/:id", component: ItemDetailComponent },
 ];
 
